@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="tf_prefix" default="/"/>
+  <arg name="tf_prefix" default=""/>
 
   <node name="sick_tim551_2050001" pkg="sick_tim" type="sick_tim551_2050001" respawn="false" output="screen">
-          <param name="frame_id" type="str" value="$(arg tf_prefix)/sick_tim_link" />
+          <param name="frame_id" type="str" value="$(arg tf_prefix)sick_tim_link" />
           <param name="min_ang" type="double" value="-1.5707" />
     <param name="max_ang" type="double" value="1.5707" />
     <!-- default values: -->
